@@ -1,0 +1,36 @@
+{
+  "name": "NMWWD",
+  "tagline": "Road Safety Nonprofit",
+  "logo": "NM",
+  "url": "https://nmwwd.org",
+  "nav": [["Mission","https://nmwwd.org/#mission"],["Technology","https://nmwwd.org/#app"],["Get Involved","https://nmwwd.org/#involve"]],
+  "cta_href": "https://nmwwd.org/#donate",
+  "cta_label": "Donate",
+  "cta_head": "Help us prevent the next wrong-way crash.",
+  "cta_copy": "Wrong-way crashes are rare, preventable, and disproportionately deadly. Your support funds the technology and awareness work that stops them.",
+  "blog_head": "Road safety, explained.",
+  "blog_desc": "Research, data, and prevention reporting on wrong-way driving — from a Phoenix-based road-safety nonprofit.",
+  "footer_note": "© 2026 NMWWD · Phoenix, AZ · Preventing wrong-way driving.",
+  "footer_links": [["Mission","https://nmwwd.org/#mission"],["Insights","https://nmwwd.org/blog/"],["Get Involved","https://nmwwd.org/#involve"],["Contact","mailto:nmwwd@t47group.com"]],
+  "org_sameas": [],
+  "author": {
+    "name": "Nino Mihilli",
+    "initials": "NM",
+    "url": "https://www.ninomihilli.com",
+    "jobTitle": "Founder, NMWWD",
+    "bio": "Founder of NMWWD, a Phoenix road-safety nonprofit working to prevent wrong-way driving through technology, awareness, and community.",
+    "sameAs": ["https://www.ninomihilli.com","https://t47group.com","https://nmwwd.org"]
+  },
+  "theme": {
+    "serif": "Georgia,'Times New Roman',ui-serif,serif",
+    "sans": "-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif",
+    "wrap": "740px",
+    "vars": {"bg":"#ffffff","bg2":"#f5f7fa","ink":"#151a22","muted":"#5b6472","faint":"#8a93a2","line":"#e6e9ef","card":"#ffffff","accent":"#e0362c","accent2":"#c22c23","prose":"#333a45"},
+    "bgimage": "none",
+    "headerbg": "rgba(255,255,255,.88)",
+    "ctabg": "linear-gradient(180deg,rgba(224,54,44,.07),transparent)",
+    "accentgrad": "linear-gradient(135deg,#ff5a4d,#e0362c)",
+    "logoink": "#ffffff",
+    "logoshadow": "0 10px 26px rgba(224,54,44,.28)"
+  }
+}
