@@ -127,6 +127,21 @@
 
   footer{border-top:1px solid var(--line);padding:30px 0;margin-top:10px}
   .foot{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--faint);font-size:13.5px}
+
+  /* contact form (Web3Forms) */
+  .cform{max-width:620px;margin:6px auto 0;text-align:left;display:grid;gap:14px}
+  .cform .r2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:600px){.cform .r2{grid-template-columns:1fr}}
+  .cform label{display:block;font-size:13px;font-weight:700;margin-bottom:6px;color:var(--ink)}
+  .cform input,.cform select,.cform textarea{width:100%;font:inherit;font-size:15px;padding:12px 13px;border-radius:10px;
+    border:1px solid var(--line);background:rgba(127,127,127,.07);color:var(--ink)}
+  .cform select option{color:#111}
+  .cform textarea{min-height:120px;resize:vertical}
+  .cform input:focus,.cform select:focus,.cform textarea:focus{outline:2px solid var(--blue);outline-offset:1px}
+  .cform .hp{display:none}
+  .cform .send{justify-self:center;border:none;cursor:pointer;font-family:inherit}
+  .cform .alt{font-size:13px;color:var(--muted);text-align:center}
+  .sent{max-width:620px;margin:0 auto 18px;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:rgba(127,127,127,.07);font-weight:600;display:none}
 </style>
 </head>
 <body>
@@ -268,7 +283,23 @@
         <span>✆ <a href="tel:+16028994006">602-899-4006</a></span>
         <span>⌖ 4015 N 15th Ave, Phoenix, AZ 85015</span>
       </div>
-      <div class="socials">
+      <div class="sent" id="sent">Thank you, your message was sent. We'll be in touch shortly.</div>
+        <form class="cform" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="7f43ef37-9f5c-4a7b-a800-4f10b850ea89">
+          <input type="hidden" name="subject" value="New message from nmwwd.org">
+          <input type="hidden" name="from_name" value="nmwwd.org contact form">
+          <input type="hidden" name="redirect" value="https://nmwwd.org/?sent=1#contact">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+          <div class="r2"><div><label for="cf-n">Name *</label><input id="cf-n" name="name" required autocomplete="name"></div>
+          <div><label for="cf-e">Email *</label><input id="cf-e" name="email" type="email" required autocomplete="email"></div></div>
+          <div class="r2"><div><label for="cf-p">Phone</label><input id="cf-p" name="phone" type="tel" autocomplete="tel"></div>
+          <div><label for="cf-t">Topic</label><select id="cf-t" name="topic"><option>Volunteer</option><option>Donate or sponsor</option><option>The NMWWD app</option><option>Press or media</option><option>Other</option></select></div></div>
+          <div><label for="cf-m">Message *</label><textarea id="cf-m" name="message" required></textarea></div>
+          <button class="btn send" type="submit">Send message</button>
+          <p class="alt">Prefer email? <a href="mailto:nmwwd@t47group.com">nmwwd@t47group.com</a></p>
+        </form>
+        <script>if(location.search.indexOf('sent=1')>-1){document.getElementById('sent').style.display='block';}</script>
+      <div class="socials" style="margin-top:22px">
         <a href="https://instagram.com/nmwwdorg/" target="_blank" rel="noopener" title="Instagram">IG</a>
         <a href="https://twitter.com/nmwwdorg" target="_blank" rel="noopener" title="Twitter / X">X</a>
         <a href="https://facebook.com/nmwwd.org" target="_blank" rel="noopener" title="Facebook">f</a>
